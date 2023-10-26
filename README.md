@@ -27,9 +27,9 @@ To run this code you need to have your textual document in your project director
 
 ```bash
 
-$ Plagiarism-checker-> python3 acode.py
+$ Plagiarism-checker-> python3 app.py
 
 ```
 # How to check
-First of all you have to pest your word in a 3 file, and save it. you can see you have many file in Plagiarism-checker folder.
+First of all you have to pest your word in a 3 file, and save it. you can see you have many file in folder.
 then run it.
