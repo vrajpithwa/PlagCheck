@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plagiarism Checker</title>
+</head>
+<body>
+    <h1>Plagiarism Checker</h1>
+    
+    <form action="/check_plagiarism" method="post" enctype="multipart/form-data">
+        <label for="file1">Select the first text document:</label>
+        <input type="file" name="file1" accept=".txt" required><br><br>
+
+        <label for="file2">Select the second text document:</label>
+        <input type="file" name="file2" accept=".txt" required><br><br>
+
+        <input type="submit" value="Check for Plagiarism">
+    </form>
+</body>
+</html>
