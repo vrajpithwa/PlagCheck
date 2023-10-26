@@ -58,6 +58,7 @@ def check_plagiarism():
             plagiarism_results.add(score)
     return plagiarism_results
 
+
 @app.route('/check_plagiarism', methods=['GET', 'POST'])
 def check_plagiarism_route():
     if request.method == 'POST':
@@ -85,8 +86,10 @@ def check_plagiarism_route():
             for line in diff:
                 if line.startswith('  '):
                     c.drawString(100, y_position, line)
+                    print("  ")
                 else:
                     c.drawString(100, y_position, f'[{line[0]}]{line[2:]}')
+                    print("  ")
                 y_position -= 15  # Adjust this value as needed
 
         c.save()
@@ -94,6 +97,7 @@ def check_plagiarism_route():
         return send_file(output_pdf, as_attachment=True)
 
     return html_template  # Render the embedded HTML template
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
